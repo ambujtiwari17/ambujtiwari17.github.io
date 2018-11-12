@@ -49,14 +49,21 @@ body {
           animation: spin 1s infinite linear;
 }
 
-p {
+.subhead {
   font-family: 'Karla', sans-serif;
   font-size: calc(20px + 1vw);
   /*font-size: 5vw;*/
   color: #ffffff ;
+  position: relative;
+  margin-top: -25px;
 }
 
+.bigtext {
+  font-size: calc(30px + 2vw) ;
+  color:#FFFFCC; 
+  font-family:'Karla', sans-serif;"
+}
 img {
-  height:100px;
-  width:150px;
+  height: 100px;
+  width: 150px;
 }
