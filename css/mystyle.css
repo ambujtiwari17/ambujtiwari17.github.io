@@ -60,9 +60,10 @@ body {
 
 .bigtext {
   font-size: calc(30px + 2vw) ;
-  color:#FFFFCC; 
+  color: #ffffcc; 
   font-family:'Karla', sans-serif;"
 }
+
 img {
   height: 100px;
   width: 150px;
