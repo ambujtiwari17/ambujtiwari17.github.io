@@ -39,7 +39,7 @@ body {
   background-image: linear-gradient(120deg, #21D4FD 0%, #B721FF 100%);  
 }
 
-.loading {
+/*.loading {
   border-radius: 50%;
   width: 75px;
   height: 75px;
@@ -47,7 +47,7 @@ body {
   border-top-color: white;
   -webkit-animation: spin 1s infinite linear;
           animation: spin 1s infinite linear;
-}
+}*/
 
 .subhead {
   font-family: 'Karla', sans-serif;
