@@ -1,4 +1,4 @@
-@-webkit-keyframes spin {
+/*@-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -26,7 +26,7 @@
    }
 
 }
-
+*/
 html, body {
   height: 100%;
 }
@@ -55,11 +55,11 @@ body {
   /*font-size: 5vw;*/
   color: #ffffff ;
   position: relative;
-  margin-top: -25px;
+  /*margin-top: -25px;*/
 }
 
-.bigtext {
-  font-size: calc(30px + 2vw) ;
+span {
+  font-size: calc(20px + 1vw) ;
   color: #ffffcc; 
   font-family:'Karla', sans-serif;"
 }
