@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700|Lato:400,700|Work+Sans:400,600|Merriweather+Sans:400,700|PT+Sans:400,400i,700');
+
+
+@media screen and (min-width: 1023px) {
+  p.hero-text {
+    font-size: 50px;
+  }
+
+  h4.hero-subtext {
+  	font-size:20px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+   img.process {
+  	margin-top:15rem;
+  }
+}
+
+ @media screen and (min-width: 1024px) {
+   img.process {
+  	margin-top:10rem;
+  }
+
+ }
+
+@media screen and (max-width: 768px) {
+  p.hero-text {
+    font-size: 35px;
+  }
+
+  h4.hero-subtext {
+  	font-size:15px;
+  }
+
+}
+
+@media screen and (max-width: 468px) {
+  p.hero-text {
+    font-size: 25px;
+  }
+
+  h4.hero-subtext {
+  	font-size:15px;
+  }
+
+}
+
+@media screen and (max-width: 990px) {
+	div.my-img {
+		margin-top: 10%;
+	}
+
+	p.cs-paras,span.highlighted-text,li {
+		font-size: 17px;
+	}
+}
+
+body, html {
+	overflow-x: hidden;
+}
+
+.progress-container {
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  position:fixed;
+  z-index:1000;
+  border:0;
+}
+
+.progress-bar {
+  height: 4px;
+  background: #56b739;
+  width: 0%;
+  z-index:1000;
+  border:0;
+}
+
+
+.hero {
+	z-index:1;
+    height:700px;
+    margin: -70px 0 30px 0;
+    /*background-color: #87ceeb;*/
+    /*background-image: url("../img/hero-gradient.jpg");*/
+    width:100%;
+    color:#444;
+    display:inline-block;
+    padding: 30px;
+    background-image: url("../img/hero-img-g1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero-text {
+	font-family: 'Arvo', serif;
+	margin-top:225px;
+	font-size: 3em;
+	line-height: 3em;
+	padding:30px;
+}
+
+.hero-subtext {
+	font-family: 'Arvo', serif;
+	padding:30px;
+}
+
+
+.process-section {
+	margin:75px 0;
+	padding: 0 15px;
+}
+
+/*.process-img{
+	height: 300px;
+	margin: 0 auto;
+	display:block;
+	display: table-cell;
+    height: 300px;
+    text-align: center;
+    width: 300px;
+    vertical-align: middle;
+    height:300px;
+}*/
+
+.no-bullets {
+	list-style-type: none;
+	padding:0;
+	margin-top: 20px;
+}
+
+.section-heading {
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top:50px;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+.work-section {
+	margin-top:75px;
+	padding: 0 50px;
+}
+
+
+.navbar.navbar-default {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    z-index:2;
+    position: fixed;
+    top:0;
+    width:100%;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+}
+
+
+.navbar-fixed-top.scrolled {
+  background-color: #5b4ea0;
+  transition: background-color 200ms linear;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.navbar-default .navbar-nav>li>a {
+    color: #5b4ea0;
+}
+
+.navbar-fixed-top.scrolled a, .navbar-nav.scrolled>li>a {
+	color: #fff;
+}
+
+.navbar-fixed-top.scrolled a, .navbar-nav.scrolled>li>a {
+	color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #5b4ea0;
+}
+
+.navbar-default .navbar-toggle.scrolled .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-brand {
+	color:#5b4ea0;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover, .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #36A995;
+    background-color: transparent;
+}
+
+
+
+.card {
+	margin-bottom: 20px;
+}
+
+.card-img {
+	padding:20px;
+	opacity: 1;
+	display: block;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.img-effect {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.card:hover .card-img {
+	opacity: 0.3;
+}
+
+.card:hover .img-effect {
+	opacity: 1;
+}
+
+.card-text {
+	color: white;
+	font-size: 20px;
+	/*padding: 16px 32px;*/
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 600;
+}
+
+
+.footer {
+	padding-top:60px;
+	text-align: center;
+	display:inline;
+	font-family: 'Work Sans', sans-serif;
+}
+
+.contact-card {
+	height:200px;
+}
+
+.contact-icon {
+	padding: 20px;
+	height:80px;
+}
+
+.contact-details {
+
+}
+
+.social-media-links-list {
+	overflow-x:hidden;
+	white-space:nowrap; 
+	width: 100%;
+} 
+
+.social-media-icons {
+	display:inline;
+	margin-right: 5vh;
+}
+
+.cs-text {
+	font-family: 'Arvo', serif;
+	font-size: 30px;
+	padding:100px 0 20px 0px;
+	text-align: center;
+	color:#5b4ea0;
+}
+
+.cs-detail {
+	border-top:1px solid grey;
+	padding-top: 20px;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight:700;
+}
+
+.list-unstyled {
+	font-family: 'PT Sans', sans-serif;
+	font-weight:400;
+	color:#666;
+}
+
+.cs-img {
+	width: 100%;
+	display:block;
+}
+
+.cs-paras {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 20px;
+	line-height: 1.5em;
+	color:#606060;
+	padding-top:20px;
+}
+
+h3 {
+	font-size:30px;
+}
+
+h3.cs-topics {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 700;
+	padding-top:30px;
+	padding-bottom: 10px;
+}
+
+
+h4 {
+	font-size:25px;
+}
+
+h4.cs-topics {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 700;
+	padding-top:30px;
+	padding-bottom: 20px;
+}
+
+.highlighted-text {
+	color:#5b4ea0;
+	font-weight: 700;
+}
+
+.back-to-port {
+	font-family: 'PT Sans', sans-serif;
+	font-size:20px;
+	text-align: center;
+	margin-top:50px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+	width:100%;
+
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #5b4ea0;
+}
+
+a {
+	color:#5b4ea0;
+}
+
+.my-img {
+	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+	margin-top: 30%;
+}
+
+.about-txt {
+	padding:50px;
+}
