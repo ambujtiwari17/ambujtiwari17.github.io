@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Arvo:400,700|Lato:400,700|Work+Sans:400,600|Merriweather+Sans:400,700|PT+Sans:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700|Work+Sans:400,600|Merriweather+Sans:400,700|PT+Sans:400,400i,700');
 
 
 @media screen and (min-width: 1023px) {
@@ -54,6 +54,10 @@
 
 	p.cs-paras,span.highlighted-text,li {
 		font-size: 17px;
+	}
+
+	h3,h4.cs-topics {
+		font-size:25px;
 	}
 }
 
@@ -131,15 +135,14 @@ body, html {
 
 .section-heading {
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom:50px;
 	margin-top:50px;
 	font-family: 'Merriweather Sans', sans-serif;
 }
 
 
 .work-section {
-	margin-top:75px;
-	padding: 0 50px;
+	margin-top:30px;
 }
 
 
@@ -196,12 +199,9 @@ body, html {
 
 
 
-.card {
-	margin-bottom: 20px;
-}
 
 .card-img {
-	padding:20px;
+	/*padding:20px;*/
 	opacity: 1;
 	display: block;
 	height: auto;
@@ -324,6 +324,25 @@ h4.cs-topics {
 	padding-top:30px;
 	padding-bottom: 20px;
 }
+
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+
 
 .highlighted-text {
 	color:#5b4ea0;
