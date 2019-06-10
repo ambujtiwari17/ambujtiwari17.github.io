@@ -31,7 +31,7 @@
 </head>
 <body>
 
-<nav id="navbar" class="navbar navbar-default navbar-fixed-top" style="font-family: 'Work Sans', sans-serif; font-size:15px;">
+<nav id="navbar" data-aos="slide-down" class="navbar navbar-default navbar-fixed-top" style="font-family: 'Work Sans', sans-serif; font-size:15px;">
   <div class="container-fluid">
     <div class="navbar-header">
     	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarItems" style="border-width: 0px">
@@ -56,14 +56,14 @@
 	<div class=" col-xs-1 col-sm-1 col-md-1"></div>
 	<div class="col-xs-10 col-sm-10 col-md-10">
 		<div class="wrapper">
-			<div class="container-fluid">
+			<div data-aos="fade-up" class="container-fluid">
 					<p class="cs-text">About Me</p>
 			</div>
 			<div class="row">
 				<div class="col-md-6">
-					<div class="my-img"><img class="img-responsive" src="img/my-pic.jpg" style="border-radius: 50%"></div>
+					<div data-aos="fade-right" class="my-img"><img class="img-responsive" src="img/my-pic.jpg" style="border-radius: 50%"></div>
 				</div>
-				<div class="col-md-6 about-txt">
+				<div data-aos="fade-left" class="col-md-6 about-txt">
 					<p class="cs-paras">Hello! 👋</p>
 					<p class="cs-paras">I'm Ambuj (pronounced <i>um-buj</i>), a graduate student pursuing my masters at UT Austin where I'm learning about the multiple facets of User Experience(UX) Design and Product Design. As an emerging designer in the field, I'm learning how to strike a balance between understanding user needs and aligning them effectively with the business goals of an organization while constantly trying to pick up new skills and hone my existing skills. </p>
 					<p class="cs-paras">Though I have always had a love for all things design, the gradual shift from computer science to UX allowed me to understand how design functions at deeper levels and empowers people by solving real-world problems.</p>
@@ -114,6 +114,32 @@
 		});
 	});
 </script>
+
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+   AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 50, // values from 0 to 3000, with step 50ms
+  duration: 750, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+  </script>
 
 </body>
 </html>
