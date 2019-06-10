@@ -381,3 +381,40 @@ a {
 .about-txt {
 	padding:50px;
 }
+
+.btn {
+  color: #5b4ea0;
+  background-color: transparent;
+  outline: 0;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  font-family: 'PT Sans', sans-serif;
+}
+
+
+.btn-round {
+  border: 0;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.btn-lg {
+  padding: 10px 37.5px 10px 37.5px;
+  font-size: 1.2em;
+}
+
+
+.btn-ghost-orange {
+  border: 2px solid #5b4ea0;
+}
+.btn-ghost-orange:hover {
+  background-color: #5b4ea0;
+  color: #fff;
+}
+.btn-ghost-orange:active {
+  background-color: #bf6516;
+}
