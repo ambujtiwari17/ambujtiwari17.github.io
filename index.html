@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/hover.min.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="icon" href="img/sign.png" type="image/x-icon"/>
@@ -52,7 +53,7 @@
 
 
 	<div class="container-fluid">
-		<div class="row">
+		<div class="row" data-aos="fade-up">
 			<div class="col-sm-12 col-md-12 hero">
 				<p class="hero-text cd-headline slide">Hi! I'm a <span style="color: #36A995">product designer</span> who strives to craft digital experiences that are 
 					<span class="cd-words-wrapper" style="color: #5b4ea0;">
@@ -92,9 +93,9 @@
 
 
 
-<div class="container-fluid" id="work-section" style="background-color: #faf4fd;padding-bottom: 75px;width:100%;">
+<div class="container-fluid" data-aos="zoom-in" id="work-section" style="background-color: #faf4fd;padding-bottom: 75px;width:100%;">
 		<div><h4 class="section-heading">Selected Work</h4></div>
-		<div class="row work-section">
+		<div class="row work-section" data-aos="fade-left">
 			<div class="col-sm-2 col-md-2"></div>
 			<div class="card hvr-rectangle-out hvr-push col-sm-8 col-md-8">
 				<div><a href="hommie.html"  target="_blank">
@@ -105,7 +106,7 @@
 			<div class="col-sm-2 col-md-2"></div>
 		</div>
 
-<div class="row work-section">
+<div class="row work-section" data-aos="fade-right">
 			<div class="col-sm-2 col-md-2"></div>
 			<div class="card hvr-rectangle-out hvr-push col-sm-8 col-md-8">
 				<div><a href="media/akutehealth_usability.pdf" target="_blank">
@@ -119,7 +120,7 @@
 
 
 
-		<div class="row work-section">
+		<div class="row work-section" data-aos="fade-left">
 			<div class="col-sm-2 col-md-2"></div>
 			<div class="card hvr-rectangle-out hvr-push col-sm-8 col-md-8">
 				<div><a href="tempo.html">
@@ -132,7 +133,7 @@
 
 		
 
-		<div class="row work-section">
+		<div class="row work-section" data-aos="fade-right">
 			<div class="col-sm-2 col-md-2"></div>
 			<div class="card hvr-rectangle-out hvr-push col-sm-8 col-md-8">
 				<div><a href="permanent.html">
@@ -144,18 +145,18 @@
 		</div>
 </div>
 
-<div class="container" id="contact-section">
+<div class="container" data-aos="fade-up" id="contact-section">
 	<div><h4 class="section-heading">Contact</h4></div>
 	<div class="row" style="text-align: center;">
-		<div class="col-sm-4 col-md-4 contact-card">
+		<div class="col-sm-4 col-md-4 contact-card" data-aos="zoom-in">
 			<div class="contact-icon"><i class="fa fa-map-marker fa-4x" style="color: #5b4ea0;"></i></div>
 			<div class="contact-details"><p class="cs-paras">Austin, TX</p></div>
 		</div>
-		<div class="col-sm-4 col-md-4 contact-card">
+		<div class="col-sm-4 col-md-4 contact-card" data-aos="zoom-in">
 			<div class="contact-icon"><i class="fa fa-envelope fa-4x" style="color: #5b4ea0;"></i></div>
 			<div class="contact-details"><p class="cs-paras">ambuj.tiwari@utexas.edu</p></div>
 		</div>
-		<div class="col-sm-4 col-md-4 contact-card">
+		<div class="col-sm-4 col-md-4 contact-card" data-aos="zoom-in">
 			<div class="contact-icon"><i class="fa fa-mobile fa-5x" style="color: #5b4ea0;"></i></div>
 			<div><p class="cs-paras">+1 (512) 903-5247</p></div>
 		</div>
@@ -199,15 +200,31 @@
 	});
 </script>
 
-<!-- <script>
-	$("nav").find("a").click(function(e) {
-    e.preventDefault();
-    var section = $(this).attr("href");
-    $("html, body").animate({
-        scrollTop: $(section).offset().top
-    });
+
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+   AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 50, // values from 0 to 3000, with step 50ms
+  duration: 750, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
 });
-</script>
- -->
+  </script>
 </body>
 </html>
