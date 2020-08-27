@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Hommie Case Study | UX Design | Ambuj Tiwari</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/hover.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="icon" href="img/sign.png" type="image/x-icon"/>
+	
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-133548183-1');
+	</script>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/20ab91acc4.js"></script>
+	<script src="js/modernizr.js"></script>
+</head>
+<body>
+
+	<div class="progress-container">
+		<div class="progress-bar" id="myBar"></div>
+	</div> 
+
+
+	<nav id="navbar" data-aos="slide-down" class="navbar navbar-default navbar-fixed-top" style="font-family: 'Work Sans', sans-serif; font-size:15px;">
+		<!--   <div class="container-fluid"> -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarItems" style="border-width: 0px">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="index.html" style="font-size:20px;margin-left:30px;">Ambuj Tiwari</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarItems">
+				<ul class="nav navbar-nav navbar-right" style="margin-right:30px;margin-left: 15px;">
+					<li><a href="about.html">About</a></li>
+					<li><a href="index.html#work-section">Work</a></li>
+					<li><a href="media/resume.pdf" target="_blank">Resume</a></li>
+					<li><a href="index.html#contact-section">Contact</a></li>
+				</ul>
+			</div>
+			<!-- 	</div> -->
+		</nav>
+
+
+		<div class="row">
+			<div class=" col-xs-1 col-sm-1 col-md-1"></div>
+			<div class="col-xs-10 col-sm-10 col-md-10">
+				<div class="wrapper">
+					<div class="container-fluid">
+						<div class="col-sm-12 col-md-12">
+							<p data-aos="fade-down" class="cs-text">UTIP Website Redesign</p>
+							<div  data-aos="fade-down" class="row" style="margin-bottom: 30px;">
+								<div class="col-sm-2 col-md-2 cs-detail"><p>Project Type</p><ul class="list-unstyled"><li>PEP Capstone, School of Information</li></ul></div>
+								<div class="col-sm-2 col-md-2 cs-detail"><p>Team</p><ul class="list-unstyled">
+									<li>Ambuj Tiwari</li>
+									<li>Dr. James K. Galbraith</li>
+								</ul>
+							</div>
+							<div class="col-sm-2 col-md-2 cs-detail"><p>My Roles</p><ul class="list-unstyled">
+								<li>User Research</li>
+								<li>Information Architecture</li>
+								<li>Visual Design</li>
+								<li>Web Development</li>
+							</ul></div>
+							<div class="col-sm-2 col-md-2 cs-detail"><p>Methods Used</p><ul class="list-unstyled">
+								<li>Competitive Analysis</li>
+								<li>Affinity Diagramming</li>
+								<li>Heuristic Evaluation</li>
+								<li></li>
+							</ul></div>
+							<div class="col-sm-2 col-md-2 cs-detail"><p>Tools Used</p><ul class="list-unstyled">
+								<li>Figma</li>
+								<li>Sketch</li>
+								<li>Sublime</li>
+								<li>Github (version control)</li>
+								<li>HTML/CSS</li>
+								<li>JavaScript</li>
+							</ul></div>
+							<div class="col-sm-1 col-md-1"></div>
+						</div>
+						<!-- <h4 class="hero-subtext">Learning the finer intricacies of user experience at UT Austin.</h4> -->
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row" style="padding-bottom: 30px">
+					<div class="col-sm-1 col-md-1"></div>
+					<div  data-aos="fade-up" class="cs-img">
+						<img class="col-md-10 img-responsive" src="img/utip-cover.png" alt="abc"/>
+					</div>
+					<div class="col-sm-1 col-md-1"></div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row" data-aos="fade-right">
+					<div class="col-sm-1 col-md-1"></div>
+					<div class="col-md-10"><h3 class="cs-topics">Client and Problem Space</h3></div>
+					<div class="col-sm-1 col-md-1"></div>
+				</div>
+				<div class="row" data-aos="fade-right">
+					<div class="col-sm-1 col-md-1"></div>
+					<div class="col-md-10"><p class="cs-paras">The University of Texas Inequality Project(UTIP) is a small research group housed within the LBJ School of Affairs, UT Austin that is concerned with <b>measuring and explaining movements of inequality in wages and earnings</b> and <b>patterns of industrial change around the world</b>. However, the UTIP website had several design and development issues, the three key issues being:</p>
+						<ul class="cs-paras">
+							<li>Responsiveness</li>
+							<li>Visualization of global research data</li>
+							<li>User-friendly design</li>
+						</ul>
+					<p class="cs-paras">It was clear that the website needed a major <b>design overhaul</b>.</p>
+					
+						<blockquote class="blockquote"><p class="cs-paras highlighted-text">Design Goal: How do we design a website that is fully responsive, leverages the richness of research data in the form of engaging, interactive data vizualizations and is visually appealing(professional yet neat and clean)?</p>
+						</blockquote>
+					</div>
+					<div class="col-sm-1 col-md-1"></div>
+				</div>
+
+				<div class="row" data-aos="fade-left">
+					<div class="col-sm-1 col-md-1"></div>
+					<div class="col-md-10"><h3 class="cs-topics">Solution</h3></div>
+					<div class="col-sm-1 col-md-1"></div>
+				</div>
+				<div class="row" data-aos="fade-left">
+					<div class="col-sm-1 col-md-1"></div>
+					<div class="col-md-10"><p class="cs-paras">The rebranded and redesigned website addresses these key issues as previously identified. It is a fully responsive website that works smoothly across multiple device screens, it uses interactive JavaScript map libraries to represent the large amount of research data and maintains the professional branding and ethos of University of Texas web design practices.</p></div>
+					<div class="col-sm-1 col-md-1"></div>
+				</div>
+
+		
+				<div class="row" data-aos="fade-right">
+					<div class="col-sm-1 col-md-1"></div>
+					<div class="col-md-10"><h3 class="cs-topics">User Research</h3></div>
+					<div class="col-sm-1 col-md-1"></div>
+				</div>
+
+				<div class="row" data-aos="fade-right">
+					<div class="col-sm-1 col-md-1"></div>
+					<div class="col-md-10"><h4 class="cs-topics">Competitive Analysis</h4></div>
+					<div class="col-sm-1 col-md-1"></div>
+				</div>
+
+				<div class="row" data-aos="fade-right">
+					<div class="col-sm-1 col-md-1"></div>
+					<div class="col-md-10"><p class="cs-paras">For our competitive analysis, we decided to look at four other websites. We identified three direct competitors which operate in the same realm of global income inequality research and data representation namely – <a href="https://wid.world/">World Inequality Database(WID)</a>, <a href="https://fsolt.org/swiid/">Fred Solt’s SWIID</a> and <a href="https://databank.worldbank.org/home.aspx
+						">World Bank's WDI</a> – and one indirect competitor in UT LBJ's own <a href="chasp.lbj.utexas.edu">CHASP(Center for Health and Social Policy)</a><p>
+
+						<p class="cs-paras">The findings from the competitor analysis are summarized as follows:</p>
+
+						<h4 class="cs-paras"><b>Direct</b></h4>
+
+						<ol class="cs-paras">
+							<li>World Inequality Database(WID)</li>
+							<p class="cs-paras">Strengths</p>
+							<ul class="cs-paras">
+<li>Simple, clean interface</li>
+<li>Relative income position simulator on homepage which is easy to take</li>
+<li>Faceted search allows refined search results</li>
+<li>Three main cards on homepage for world view, country graphs and data tables</li>
+<li>Interactive charts and maps (powered by Highcharts)</li>
+<li>Easy data download options available (based on indicators, regions, years)</li>
+<li>Country wise inequality and macroeconomic data available</li>
+<li>News items have more context involved</li>
+</ul>
+<p class="cs-paras">Weaknesses</p>
+							<ul class="cs-paras">
+<li>Not responsive</li>
+<li>No clear instructions on how to view/access data</li>
+</ul>
+<br>
+
+<li>World Bank's WDI</li>
+							<p class="cs-paras">Strengths</p>
+							<ul class="cs-paras">
+<li>Simple, clean interface with nicely organized content</li>
+<li>Fully responsive website, content scales according to the device/platform</li>
+<li>Customized graphs and charts based on search criteria(countries, variables, years)</li>
+<li>Detailed and interactive charts and maps (Tableau visualizations)</li>
+</ul>
+<p class="cs-paras">Weaknesses</p>
+							<ul class="cs-paras">
+<li>Not obvious in the first glance where to go to see income inequality related charts</li>
+<li>Difficult to determine where to download data</li>
+</ul>
+<br>
+<li>Fred Solt’s SWIID</li>
+							<p class="cs-paras">Strengths</p>
+							<ul class="cs-paras">
+<li>Simple, clean, minimalist interface, not using many colors which gives it a serious and professional look</li>
+<li>Customized graphs and charts based on search criteria (countries, variables, years)</li>
+<li>Allows comparison of multiple countries data</li>
+<li>Three main cards on homepage for world view, country graphs and data tables</li>
+<li>Charts and maps (powered by Shiny, an R package)</li>
+<li>Easy data download options available (based on indicators, regions, years)</li>
+<li>Country wise inequality and macroeconomic data available</li>
+<li>News items have more context involved</li>
+</ul>
+<p class="cs-paras">Weaknesses</p>
+							<ul class="cs-paras">
+<li>Not fully responsive, only partially</li>
+<li>Charts not interactive on homepage (Source Data however, is interactive)</li>
+<li>Only 4 countries allowed at a time for comparison</li>
+</ul>
+						</ol>
+
+<h4 class="cs-paras"><b>Indirect</b></h4>
+
+						<ol class="cs-paras">
+							<li>CHASP (Center for Health and Social Policy)</li>
+							<ul class="cs-paras">
+<li>Fully responsive website</li>
+<li>Consistent with the University of Texas brand image</li>
+<li>On the homepage, information about the center is clear, communicates purpose effectively</li>
+<li>Clear navigation hierarchy on the top with clear labels(navigation links/items)</li>
+</ul>
+</ol>
+
+
+
+					</div>
+
+					<div class="col-sm-1 col-md-1"></div>
+
+				</div>
+
+				<div class="row" data-aos="fade-left">
+					<div class="col-sm-1 col-md-1"></div>
+					<div class="col-md-10"><h4 class="cs-topics">Usability Evaluation</h4></div>
+					<div class="col-sm-1 col-md-1"></div>
+				</div>
+
+				<div class="row" data-aos="fade-left">
+					<div class="col-sm-1 col-md-1"></div>
+					<div class="col-md-10"><p class="cs-paras">We also conducted a preliminary usability evaluation on the UTIP website based on <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">Nielsen's 10 Heuristics for Usability Design</a>. This allowed us to identify the key usability issues and helped us target our focus on these and build design solutions around them.</p>
+
+						<p class="cs-paras">Key findings from the evaluation were:</p>
+						<ul class="cs-paras">
+<li>Unnecessary black gutter space uses a lot of screen estate, loss of valuable space that can be used to showcase <b>important information</b></li>
+<li>The World Map GIF on the website does not give viewer <b>enough time to look</b> at the trends</li>
+<li>Static GIF <b>does not allow interactivity</b> with the World Map and the underlying data</li>
+<li>Switch global navigation links on the left with current links sitting at the top</li>
+<li>Redundant links in the bottom and the top can <b>confuse the user</b> to some extent</li>
+<li>News items can be changed, instead of just links they can be “cards”</li>
+<ul>
+<li>Each card consists of an image (from event/presentation), title, overview and button that opens a full page for that news item/event with appropriate media</li>
+</ul>
+<li><b>Inconsistent</b> usage of typography</li>
+<li>Archive section can exist separately, away from the homepage</li>
+<li><b>Lack of data set visualizations</b>(charts, maps, graphs)</li>
+						</ul>
+
+
+	<div class="row" data-aos="fade-up" style="padding-top:30px; padding-bottom: 30px">
+		<div class="col-sm-1 col-md-1"></div>
+		<div class="col-md-10">
+			<img class="img-responsive" style="margin-left:auto;margin-right: auto;display:block;" src="img/utip-old-home.png" alt="abc"/>
+		</div>
+		<div class="col-sm-1 col-md-1"></div>
+	</div>	
+
+			<!-- <div class="row" style="padding-top:30px;padding-bottom: 30px">
+			<div class="col-sm-2 col-md-3"></div>
+			<div>
+				<img class="col-md-6 img-responsive" style="" src=""/>
+			</div>
+			<div class="col-sm-2 col-md-3"></div>
+		</div> -->
+
+		<div class="col-sm-1 col-md-1"></div>
+
+	</div>
+</div>
+
+
+
+		<div class="row" data-aos="fade-right">
+			<div class="col-sm-1 col-md-1"></div>
+			<div class="col-md-10"><h3 class="cs-topics">Information Architecture</h3></div>
+			<div class="col-sm-1 col-md-1"></div>
+		</div>
+
+		<div class="row" data-aos="fade-right">
+			<div class="col-sm-1 col-md-1"></div>
+			<div class="col-md-10">
+				<p class="cs-paras">Since the website had a lot of information and data that needed to be presented effectively, information architecture of the website was pretty crucial. The redesigned websited had to have a solid yet flexible framework for file and directory structure.</p>
+				<p class="cs-paras">The older website did not have organized folders for the different web components and media files (audio, video, PDF documents etc.). Everything was placed right in the root folder, which made the website structure clunky and made the navigation difficult. So the first step towards creating an effective website architecture was to have three main directories – img, css, js – for images, css and javascript files. Then the other files would be placed in other directories. </p>
+
+			</div>
+
+
+			<div class="col-sm-1 col-md-1"></div>
+		</div>
+
+
+		<div class="row" data-aos="fade-right">
+			<div class="col-sm-1 col-md-1"></div>
+			<div class="col-md-10"><h4 class="cs-topics">Content Inventory</h4></div>
+				<div class="col-sm-1 col-md-1"></div>
+			</div>
+
+			<div class="row" data-aos="fade-right">
+				<div class="col-sm-1 col-md-1"></div>
+				<div class="col-md-10"><p class="cs-paras">Creating a content inventory helped us build a solid foundation for our project in terms of the levels of navigation we would aim for, the contents on each level and the overall project hierarchy.</p>
+
+					<p class="cs-paras">We defined <b>two levels of navigation</b> for the content and the initial structure of our website. We decided to have a total of <b>six global navigation</b> items - <i>Home, About, Research, Tools, Tutorials, Publications and Contact Us.</i> The initial two items "Working Papers" and "Data Sets" were grouped under a new nav item "Research" to effectively attract the user browsing the website to the research done(being done) by the group. We also added navigation breadcrumbs in our design so that the user is aware of what level they are on the site hierarchy and can use those to navigate to derivative pages</p>
+
+				</div>
+
+
+				<div class="col-sm-1 col-md-1"></div>
+			</div>
+
+
+			<div class="row" data-aos="fade-up" style="padding-top:30px;padding-bottom: 30px">
+				<div class="col-md-1"></div>
+				<div>
+					<img class="col-md-10 img-responsive" src="img/utip-nav-struct.png" alt="abc"/>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+
+			<div class="row" data-aos="fade-up" style="padding-top:30px;padding-bottom: 30px">
+				<div class="col-md-1"></div>
+				<div>
+					<img class="col-md-10 img-responsive" src="img/utip-glob-nav.png" alt="abc"/>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		
+
+					<div class="row" data-aos="fade-left">
+						<div class="col-sm-1 col-md-1"></div>
+						<div class="col-md-10"><h3 class="cs-topics">Designing and Prototyping</h3></div>
+						<div class="col-sm-1 col-md-1"></div>
+					</div>
+
+					<div class="row" data-aos="fade-left">
+						<div class="col-sm-1 col-md-1"></div>
+						<div class="col-md-10"><h4 class="cs-topics">Design Mockups</h4></div>
+							<div class="col-sm-1 col-md-1"></div>
+						</div>
+
+						<div class="row" data-aos="fade-left">
+							<div class="col-sm-1 col-md-1"></div>
+							<div class="col-md-10"><p class="cs-paras">Once we had conducted our research and analysis, we started working on mockups for the UI screens for three primary devices – desktops and laptops, tablets and mobile phones.</p></div>
+							<div class="col-sm-1 col-md-1"></div>
+						</div>
+
+						<div class="row" data-aos="fade-up" style="padding-top:30px;padding-bottom: 30px">
+							<div class="col-sm-1 col-md-1"></div>
+							<div class="col-md-10"><img class="img-responsive" src="img/utip-mockups.png" alt="abc"/></div>
+							<div class="col-sm-1 col-md-1"></div>
+						</div>
+
+
+						<div class="row" data-aos="fade-up" style="padding-top:30px;padding-bottom: 30px">
+							<div class="col-sm-1 col-md-1"></div>
+							<div class="col-md-10"><img class="img-responsive" src="img/utip-mockups2.png" alt="abc"/></div>
+							<div class="col-sm-1 col-md-1"></div>
+						</div>
+
+						<div class="row" data-aos="fade-right">
+							<div class="col-sm-1 col-md-1"></div>
+							<div class="col-md-10"><h4 class="cs-topics">Development</h4></div>
+								<div class="col-sm-1 col-md-1"></div>
+							</div>
+
+							<div class="row" data-aos="fade-right">
+								<div class="col-sm-1 col-md-1"></div>
+								<div class="col-md-10"><p class="cs-paras">The development of the project took a significantly long time. We started by creating a basic HTML webpage, and then we added the bells and whistles to it. We used the Bootstrap framework for CSS styling and an extremely powerful JavaScript library called amCharts for data representation on world maps. It is an open source library and has great functions for interactive data visualizations.</p>
+
+									<p class="cs-paras">The amCharts JavaScript library allowed us to present the richness of the UTIP EHII research data in a new light. Instead of just seeing static GIF images of the global Gini coefficients, the user could now view the Gini coefficients for individual countries, even the smallest ones, by zooming in and out. Even on mobile phones, the user has the ability to now pinch and zoom and interact with the charts. We streamlined the entire website structure to make it feel clean and robust. Using Bootstrap 4 ensured  that we could scale the website on multiple device resolutions. The site also loaded about 30x faster than before.</p></div>
+
+									<p class="cs-paras">We also used GitHub for version control and that was an <i>immense</i> help. Any time we wanted to roll back to a version, it was made possible using version control.</p></div>
+								<div class="col-sm-1 col-md-1"></div>
+							</div>
+
+							<div class="row" data-aos="fade-up" style="padding-top:30px;padding-bottom: 30px">
+								<div class="col-sm-1 col-md-1"></div>
+								<div class="col-md-10"><img class="img-responsive" src="img/utip-new-home.png" alt="abc"/></div>
+								<div class="col-sm-1 col-md-1"></div>
+							</div>
+
+								<div data-aos="zoom-in" style="text-align:center;margin-left:auto; margin-right:auto"><a href="http://www.utip.lbj.utexas.edu" target="_blank"><button class="btn btn-round btn-lg btn-ghost-orange">Click To View Live Site</button></a></div>
+
+								<div style="padding-top: 20px"></div>
+
+								<div class="col-sm-1 col-md-1"></div>
+							</div>
+
+
+<div class="row" data-aos="fade-right">
+							<div class="col-sm-1 col-md-1"></div>
+							<div class="col-md-10"><h4 class="cs-topics">Acknowlegements and Reflection</h4></div>
+								<div class="col-sm-1 col-md-1"></div>
+							</div>
+
+							<div class="row" data-aos="fade-right">
+								<div class="col-sm-1 col-md-1"></div>
+								<div class="col-md-10"><p class="cs-paras">This was a very challenging project but in the end, it was a very rewarding experience. Hours and weeks and months of effort finally culminated in a product that ticked all the boxes we had initially made a list of for this project – <b><i>better data representation, better scalability, better design</i></b>. The scope of the project however, was incredibly vast which led to scoping issues and mismanagement of deadlines on my part. I couldn't properly estimate the time it would take to learn and grasp the tools and resources and the expectations before taking on this mammoth task of redesign <i>and</i> coding an entire website that was replete with global data from over 140 countries over the last six decades.</p>
+
+									<p class="cs-paras">I'm incredibly grateful to Prof. Galbraith for this opportunity, for trusting me with my vision and for being a rock of support throughout during such times of uncertainty. Thank you, Professor.</p></div>
+								<div class="col-sm-1 col-md-1"></div>
+							</div>
+
+
+						</div>
+						<div class="col-xs-1 col-sm-1 col-md-1"></div>
+					</div>
+
+					<div class="row">
+						<div class="back-to-port">
+							<a href="index.html#work-section" style="color:#5b4ea0;"><span>Back to Portfolio</span></a>
+						</div>
+					</div>
+
+					<div class="wrapper" style="width:100%">
+						<div class="container-fluid" style="background-color: #5b4ea0">
+							<div class="row footer">
+
+								<div class="media-links">
+									<ul class="social-media-links-list">
+										<li  class="social-media-icons"><a href="https://www.linkedin.com/in/ambujtiwari17" target="_blank"><i class="fa fa-linkedin fa-2x hvr-grow" style="color: #fff;"></i></a></li>
+										<li  class="social-media-icons"><a href="https://www.instagram.com/ambujtiwari17" target="_blank"><i class="fa fa-instagram fa-2x hvr-grow" style="color: #fff;"></i></a></li>
+										<li  class="social-media-icons"><a href="https://www.facebook.com/ambujtiwari17" target="_blank"><i class="fa fa-facebook fa-2x hvr-grow" style="color: #fff;"></i></a></li>
+										<li  class="social-media-icons"><a href="https://www.twitter.com/ambuj_tiwari17" target="_blank"><i class="fa fa-twitter fa-2x hvr-grow" style="color: #fff;"></i></a></li>
+									</ul>
+									</div> 
+									<p style="color:#fff">Website designed and coded by <a href="index.html" style="color:#fff;">Ambuj Tiwari.</a><br>&copy; Copyright 2019 Reserved. </p>
+								</div>
+							</div>
+						</div>
+
+
+						<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+						<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+						<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+						<script src="js/jquery-2.1.1.js"></script>
+						<script src="js/main.js"></script>
+						<script>
+							$(function () {
+								$(document).scroll(function () {
+									var $nav = $(".navbar-fixed-top");
+									var $nav2 = $(".navbar-nav");
+									var $nav3 = $(".navbar-toggle");
+									$nav.toggleClass('scrolled', $(this).scrollTop() > 15);
+									$nav2.toggleClass('scrolled', $(this).scrollTop() > 15);
+									$nav3.toggleClass('scrolled', $(this).scrollTop() > 15);
+								});
+							});
+						</script>
+
+
+						<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	var scrolled = (winScroll / height) * 100;
+	document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+<!-- <script>
+	$("nav").find("a").click(function(e) {
+    e.preventDefault();
+    var section = $(this).attr("href");
+    $("html, body").animate({
+        scrollTop: $(section).offset().top
+    });
+});
+</script>
+-->
+
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+   AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 50, // values from 0 to 3000, with step 50ms
+  duration: 750, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+  </script>
+
+</body>
+</html>
